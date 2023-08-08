@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("static/images/bg4.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-login100 {
+            max-width: 350px; /* Increased size of the white box */
+            width: 100%;
+            padding: 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .login100-form-title {
+            text-align: center;
+            font-size: 32px;
+            color: #007bff; /* Blue color code */
+            margin-bottom: 30px;
+        }
+
+        .input100 {
+            border: 2px solid #007bff; /* Blue color code */
+            color: #000;
+            background-color: #f9f9f9;
+            padding: 16px;
+            font-size: 18px;
+            border-radius: 8px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .input100::placeholder {
+            color: #888;
+        }
+
+        .login100-form-btn {
+            background-color: #007bff; /* Blue color code */
+            color: #fff;
+            border: none;
+            padding: 16px 24px;
+            font-size: 18px;
+            border-radius: 20px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .login100-form-btn:hover {
+            background-color: #0056b3; /* Darker shade of blue */
+        }
+
+        .txt1,
+        .txt2 {
+            color: #007bff; /* Blue color code */
+            font-size: 16px;
+        }
+
+        .txt2:hover {
+            color: #0056b3; /* Darker shade of blue */
+        }
+
+        .p-t-115 {
+            margin-top: 20px;
+        }
+
+        /* Additional Styles to fix the layout */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form method='POST' action="./register" class="login100-form validate-form">
+                <span class="login100-form-title p-b-26">
+                    Sign Up Here!
+                </span>
+
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="input100" type="email" id='email' name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="input100" type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reenter_password">Re-enter Password</label>
+                        <input class="input100" type="password" id="reenter_password" name="reenter_password" placeholder="Re-enter Password" required>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button type="submit" class="login100-form-btn">Register</button>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center p-t-115">
+                <span class="txt1">
+                    Already Registered?
+                </span>
+
+                <a class="txt2" href="./login">
+                    Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
